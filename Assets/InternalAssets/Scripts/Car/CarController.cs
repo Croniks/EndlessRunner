@@ -21,8 +21,8 @@ public class CarController : MonoBehaviour
         Vector3 currentPostion = transform.position;
         float newXposition = currentPostion.x;
 
-        bool leftInput = Input.GetKey(KeyCode.A);
-        bool rightInput = Input.GetKey(KeyCode.D);
+        bool leftInput = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
+        bool rightInput = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
 
         if((leftInput == true && rightInput == true) == false)
         {
